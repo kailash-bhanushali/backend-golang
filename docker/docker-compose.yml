@@ -1,0 +1,10 @@
+version: '3.9'
+services:
+  demo-backend:
+    image:  backend
+    restart: always
+    environment:
+      - PORT=8080
+      - LOGLEVEL=debug
+    ports:
+      - '8080:8080'
