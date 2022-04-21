@@ -12,7 +12,7 @@ var testStruct1 api.TestStruct
 
 func DBConnect() api.TestStruct {
 	//dsn := "host=localhost user=postgres password=1234 dbname=postgres port=5433 sslmode=disable"
-	dsn := "host=hippo-primary.postgres-operator.svc.cluster.local user=hippo password=1@fwn28qaFrIvw2N)4S8HMRd " +
+	dsn := "host=hippo-primary.postgres-operator.svc.cluster.local user=hippo password=password " +
 		"dbname=hippo port=5432"
 	db, err := gorm.Open(postgres.Open(dsn), &gorm.Config{})
 	if err != nil {

@@ -20,6 +20,7 @@ clean:
 
 .PHONY: get
 get:
+	$(GO) mod vendor
 	$(GO) mod download
 	$(GO) mod verify
 	$(GO) mod tidy -compat=1.17
